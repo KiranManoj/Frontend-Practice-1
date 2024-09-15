@@ -1,10 +1,66 @@
-*{
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-html, body{
-height: 100%;
-width: 100%;
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "MyCustomFont", Arial, sans-serif; /* Use custom font */
+}
+
+@font-face {
+  font-family: "MyCustomFont"; /* Custom name for the font */
+  src: url("assets/futura-pt-medium.b650e9c2aaf6.ttf") format("truetype"); /* Path to the .ttf file */
+  src: url("assets/futura-pt-book-oblique.f859db99cda9.ttf") format("truetype"); /* Path to the .ttf file */
+  src: url("assets/futura-pt-book.2dadbb3c03c1.ttf") format("truetype"); /* Path to the .ttf file */
+  font-weight: normal; /* Optional: Specify font weight */
+  font-style: normal; /* Optional: Specify font style */
+}
+
+nav {
+  height: 10vh;
+  width: 100%;
+  font-size: 17px;
+  display: flex;
+  align-items: center;
+  padding: 1vw;
+  border-bottom: 2px solid #00000015;
+}
+#nav-menu {
+  height: 100%;
+  width: 55%;
+  padding: 0 1.5vw;
+  /* background-color: rebeccapurple; */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 40px;
+}
+#nav-menu h3:nth-last-child(1){
+    color: red;
+}
+#nav-menu h3 span{
+    margin: 0 5px;
+    font-size: 1.3vw;
+}
+#nav-menu img {
+  height: 70%;
+  width: auto;
+}
+
+#nav-signup {
+  height: 100%;
+  width: 50%;
+  /* background-color: green; */
+  padding-right: 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 30px;
+}
+#nav-signup h3{
+    color: blue;
 }
