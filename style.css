@@ -20,6 +20,7 @@ body {
   font-style: normal; /* Optional: Specify font style */
 }
 
+/* Navbar */
 nav {
   height: 10vh;
   width: 100%;
@@ -40,7 +41,7 @@ nav {
   gap: 40px;
 }
 #nav-menu h3:nth-last-child(1){
-    color: red;
+    color: #EA744A;
 }
 #nav-menu h3 span{
     margin: 0 5px;
@@ -63,4 +64,39 @@ nav {
 }
 #nav-signup h3{
     color: blue;
+}
+
+/* Header */
+#nav-mini{
+  height: 10vh;
+  width: 100%;
+  padding: 1.5vw;
+  display: flex;
+  gap: 3vw;
+  align-items: center;
+  /* background-color: red; */
+}
+#nav-mini h4:nth-child(1){
+  color: #EA744A;
+}
+
+/* Main Page */
+section{
+  height: 80vh;
+  width: 100%;
+  /* background-color: rebeccapurple; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+section img{
+  height: 100%;
+  width: 80%;
+  object-fit: cover;
+}
+section h1{
+  position: absolute;
+  color: #E85744;
+  font-size: 9vw;
 }
