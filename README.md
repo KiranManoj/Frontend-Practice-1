@@ -16,3 +16,15 @@
 ### Screenshot
 
 ![](img/Website%20ss.png)
+
+### Links
+
+- Live Site URL: (https://kiranmanoj.github.io/Frontend-Practice-1/)
+
+## My process
+
+### Built with
+
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
