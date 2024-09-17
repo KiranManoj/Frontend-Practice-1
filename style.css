@@ -13,9 +13,19 @@ body {
 
 @font-face {
   font-family: "MyCustomFont"; /* Custom name for the font */
-  src: url("assets/futura-pt-medium.b650e9c2aaf6.ttf") format("truetype"); /* Path to the .ttf file */
-  src: url("assets/futura-pt-book-oblique.f859db99cda9.ttf") format("truetype"); /* Path to the .ttf file */
   src: url("assets/futura-pt-book.2dadbb3c03c1.ttf") format("truetype"); /* Path to the .ttf file */
+  font-weight: normal; /* Optional: Specify font weight */
+  font-style: normal; /* Optional: Specify font style */
+}
+@font-face {
+  font-family: "MyCustomFontMedium"; /* Custom name for the font */
+  src: url("assets/futura-pt-medium.b650e9c2aaf6.ttf") format("truetype"); /* Path to the .ttf file */
+  font-weight: normal; /* Optional: Specify font weight */
+  font-style: normal; /* Optional: Specify font style */
+}
+@font-face {
+  font-family: "MyCustomFontOblique"; /* Custom name for the font */
+  src: url("assets/futura-pt-book-oblique.f859db99cda9.ttf") format("truetype"); /* Path to the .ttf file */
   font-weight: normal; /* Optional: Specify font weight */
   font-style: normal; /* Optional: Specify font style */
 }
@@ -99,4 +109,70 @@ section h1{
   position: absolute;
   color: #E85744;
   font-size: 9vw;
+}
+
+/* Page 2 */
+#page2-text{
+  height: 65vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2vw;
+  /* background-color: aqua; */
+}
+#page2-text h2{
+  width: 50%;
+  font-size: 2vw;
+  line-height: 1.5;
+  font-weight: 600;
+}
+#page2-text h2 span{
+  color: #1F01FF;
+}
+#page2-text p{
+  width: 50%;
+  font-family: "MyCustomFontOblique";
+  font-size: 1.3vw;
+  font-weight: 100;
+}
+
+#page2-img{
+  height: 140vh;
+  width: 100%;
+  /* background-color: #EA744A; */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+}
+#page2-img #background{
+  height: 100%;
+  width: 58%;
+  background-color: #FBFFA7;
+}
+/* #page2-img #image{
+  height: 80%;
+  width: 50%;
+  z-index: 99999;
+  position: relative;
+} */
+#page2-img img{
+  height: 75%;
+  width: 42%;
+  position: absolute;
+  object-fit: cover;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+}
+#page2-img #background img{
+  height: 50%;
+  width: 42%;
+  position: absolute;
+  object-fit: cover;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
