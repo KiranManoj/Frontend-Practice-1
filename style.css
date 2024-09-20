@@ -175,6 +175,7 @@ section h1{
 
 
 
+
 /* Footer */
 footer{
   height: 100vh;
@@ -262,3 +263,18 @@ footer #contact .contact-component select:last-child{
   font-size: 0.9vw;
   font-weight: 580;
 }
+
+/* #page2-img #image{
+  height: 80%;
+  width: 50%;
+  z-index: 99999;
+  position: relative;
+} */
+
+footer{
+  height: 100vh;
+  width: 100%;
+  padding: 3vw 10vw;
+  background-color: red;
+}
+
